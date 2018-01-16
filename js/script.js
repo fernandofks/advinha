@@ -24,7 +24,12 @@ if(numero=== numeroSecreto){
   tentativas=0;
     }
 else{
-  alert("O número que você inseriu é o errado, você temmais " +tentativas + " tentativas");
+  if(numero>numeroSecreto){
+    alert("O número que você inseriu é maior que o secreto, você te mmais " +tentativas + " tentativas");
 
+  }
+  else{
+  alert("O número que você inseriu é menor que o secreto, você temmais" +tentativas + " tentativas");
+}
     }
 }
